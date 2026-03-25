@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🗣️ 3D Interactive AI Avatar
 
-## Getting Started
+A web-based 3D AI Avatar prototype built with Next.js and React Three Fiber. This project demonstrates real-time text-to-speech (TTS) synthesis and basic audio-reactive lip-syncing using a 3D morph-target enabled face model.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **3D Face Rendering**: Uses Three.js and React Three Fiber to render a high-quality GLTF/GLB model.
+- **Text-to-Speech (Phase 1)**: Integrated with the browser's native Web Speech API for instant voice generation.
+- **Audio-Reactive Lip Sync**: Analyzes real-time audio volume to dynamically trigger jaw/mouth morph targets (blendshapes) for realistic speech animation.
+- **Modern Architecture**: Built on Next.js App Router for optimal performance, clean component structure, and secure backend API routes for future integrations.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework:** Next.js (React)
+- **3D Graphics:** Three.js, React Three Fiber (`@react-three/fiber`), Drei (`@react-three/drei`)
+- **Audio Processing:** Web Speech API, Web Audio API
+- **Styling:** Tailwind CSS
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔮 Future Roadmap
+- **[ ] Phase 2: Integrate AI LLM (e.g., Gemini API) for dynamic, intelligent conversational responses.
 
-## Learn More
+- **[ ] Phase 3: Upgrade lip-syncing from volume-based to accurate viseme-based synchronization (e.g., using Azure TTS or Rhubarb Lip Sync).
 
-To learn more about Next.js, take a look at the following resources:
+- **[ ] Phase 4: Add automated emotion controls (happy, sad, thinking blendshapes) based on AI sentiment analysis.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+👨‍💻 Author
+Oshadha
